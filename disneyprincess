@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Magical Princess Story</title>
+
+    <style>
+        body {
+            font-family: Georgia, serif;
+            text-align: center;
+            background: linear-gradient(#ffcce6, #d9c2ff);
+            color: #663366;
+            padding: 40px 20px;
+        }
+
+        .storybook {
+            max-width: 550px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 5px 20px #a56aab;
+        }
+
+        h1 {
+            color: #cc3399;
+        }
+
+        .princess {
+            font-size: 90px;
+        }
+
+        button {
+            background: #cc3399;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #993399;
+        }
+
+        #story {
+            margin-top: 20px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="storybook">
+        <h1>✨ The Princess of Dreams ✨</h1>
+
+        <div class="princess">👸🏻</div>
+
+        <p>Welcome to a magical kingdom!</p>
+
+        <button onclick="readStory()">Read the Story</button>
+
+        <div id="story"></div>
+    </div>
+
+    <script>
+        function readStory() {
+            document.getElementById("story").innerHTML =
+                "<h2>Once Upon a Time...</h2>" +
+                "<p>Princess Isabella lived in a beautiful castle " +
+                "surrounded by enchanted forests and sparkling rivers.</p>" +
+                "<p>One day, she discovered a little star that had " +
+                "fallen from the sky. She helped it return home " +
+                "using her courage and kindness.</p>" +
+                "<p>The kingdom celebrated her bravery, and Isabella " +
+                "learned that true magic comes from a kind heart.</p>" +
+                "<h3>💖 And they all lived happily ever after! 💖</h3>";
+        }
+    </script>
+</body>
+</html>
